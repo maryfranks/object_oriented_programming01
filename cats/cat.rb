@@ -7,4 +7,6 @@ class Cat
   end
 
 end
-# tabby = Cat.new("Tabby", "salmon", "8")
+
+tabby = Cat.new("Tabby", "salmon", "8")
+sam = Cat.new("Sam", "chicken", "10")
