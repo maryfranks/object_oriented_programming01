@@ -14,7 +14,7 @@ class Player
     @gold_coins += 1
     if (@gold_coins % 10) == 0
       level_up
-      puts "congratulations, you have #{@lives}!"
+      puts "congratulations, you have #{@lives} lives!"
     end
     return @gold_coins
   end
