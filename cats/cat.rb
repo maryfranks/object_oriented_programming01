@@ -6,7 +6,14 @@ class Cat
     @meal_time = meal_time
   end
 
+  def eats_at
+    if @meal_time > 12
+      puts "#{@meal_time - 12} PM"
+    else
+      puts "#{@meal_time} AM"
+    end
+  end
 end
 
-tabby = Cat.new("Tabby", "salmon", "8")
-sam = Cat.new("Sam", "chicken", "10")
+tabby = Cat.new("Tabby", "salmon", 8)
+sam = Cat.new("Sam", "chicken", 14)
