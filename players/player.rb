@@ -19,6 +19,26 @@ class Player
     return @gold_coins
   end
 
+  def do_battle(damage)
+    @health_points -= damage
+    if @health_points < 1
+      if @lives == 0
+        restart
+      else
+        @lives -= 1
+        @health_points = 10
+        "You have #{@lives} lives remaining!"
+      end
+    else
+      "You have #{@health_points} Health Points"
+    end
+  end
+
+  def restart
+    @lives = 5
+    @gold_coins = 0
+    @health_points = 10
+  end
 
 end
 
