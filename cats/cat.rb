@@ -23,3 +23,6 @@ end
 
 tabby = Cat.new("Tabby", "salmon", 8)
 sam = Cat.new("Sam", "chicken", 14)
+
+puts tabby.meow
+puts sam.meow
